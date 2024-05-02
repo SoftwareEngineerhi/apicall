@@ -15,7 +15,6 @@ return response.json();
 }).then(data=>{ 
 setdata(data);
 setUsers(data.results);
-
 })
 .catch(error =>{
 setError(error);
@@ -31,7 +30,7 @@ setError(error);
     </div>
     <div className="details">
       <div className="field">
-        <span className="label">Name:{user.name.first} &nbsp;&emsp;{user.name.last}
+        <span className="label">Name:{user.name.first} &nbsp;{user.name.last}
         </span>
         </div>
       <div className="field">
